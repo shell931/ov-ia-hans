@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 .env
+
+# MkDocs build output
+site/
 caso-1-v2/data/
 backups/visor-g7e/
 *.tif

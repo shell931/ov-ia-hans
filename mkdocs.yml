@@ -1,0 +1,47 @@
+site_name: IA Hans - Sistema de Análisis Inteligente de Documentos
+site_description: Documentación del sistema RAG de análisis y comparación de documentos
+docs_dir: .
+site_dir: site
+use_directory_urls: false
+
+plugins:
+  - same-dir
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - tables
+
+nav:
+  - Inicio: README.md
+  - Guía de uso del sistema: GUIA-USO-SISTEMA.md
+  - Guía de uso completa: GUIA-USO-COMPLETA.md
+  - Base de conocimientos (RAG): GUIA-BASE-CONOCIMIENTOS.md
+  - Comparación de tablas: GUIA-COMPARACION-TABLAS.md
+  - Plan del sistema: PLAN-SISTEMA-ANALISIS-DOCUMENTOS.md
+  - Cloudflare Tunnel: CONFIGURACION-CLOUDFLARE-TUNNEL.md

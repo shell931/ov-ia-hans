@@ -1,0 +1,12 @@
+{
+  "name": "IA Hans Docs",
+  "user": "ubuntu",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "mkdocs-serve",
+      "command": "DISABLE_MKDOCS_2_WARNING=true .venv/bin/mkdocs serve --dev-addr 0.0.0.0:8000"
+    }
+  ],
+  "ports": [8000]
+}
